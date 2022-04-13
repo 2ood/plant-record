@@ -12,7 +12,7 @@
 body {
   background-color: var(--secondary);
   color : var(--primary);
-  font-size: 3em;
+  font-family: fantasy;
 }
 
 p {
@@ -20,13 +20,14 @@ p {
 }
 
 column {
-  width : 100vw;
-  min-width: 100vw;
+  width : 80vw;
+  min-width: 80vw;
   height : 100vh;
+  padding : 20px 10% 0 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   scroll-snap-align: center;
+  flex-flow: column nowrap;
+  text-align: center;
 }
 
 horizontal {
@@ -37,4 +38,11 @@ horizontal {
   overflow: auto;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
+}
+
+column > img {
+  width : 80vw;
+  height : 80vw;
+  margin : 0 auto;
+  margin-bottom : 10px;
 }
