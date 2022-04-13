@@ -1,4 +1,21 @@
+:root {
+  --primary : #2BAE66;
+  --secondary : #FCF6F5;
+}
+
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: 0;
+}
+
 body {
-  background-color: beige;
+  padding : 10%;
+  background-color: var(--secondary);
+  color : var(--primary);
   font-size: 3em;
+}
+
+p {
+  color : black;
 }
