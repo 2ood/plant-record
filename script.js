@@ -9,6 +9,20 @@ const firebaseConfig = {
 };
 
 
-const app = firebase.initializeApp(firebaseConfig);
-const fs = app.firestore();
-const storage = app.storage();
+//const app = firebase.initializeApp(firebaseConfig);
+//const fs = app.firestore();
+//const storage = app.storage();
+
+const left_button = document.getElementById("left");
+const right_button = document.getElementById("right");
+
+const horizontal = document.querySelector("horizontal");
+
+
+left_button.addEventListener("click", ()=>{
+    horizontal.scrollLeft-=horizontal.offsetWidth;
+});
+
+right_button.addEventListener("click", ()=>{
+  horizontal.scrollLeft+=horizontal.offsetWidth;
+});

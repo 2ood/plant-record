@@ -1,5 +1,5 @@
 :root {
-  --primary : #815854; 
+  --primary : #815854;
   --secondary : #F9EBDE;
 }
 
@@ -21,9 +21,38 @@ titlebar {
   top : 0;
   right : 0;
   left : 0;
-  height : 100px;
+  height : 60px;
   text-align: center;
-  padding-top : 30px;
+  padding-top : 40px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#left, #right {
+  position: absolute;
+  margin : auto 3vw;
+  top : calc( 100px + 35vw);
+  transform : translateY(50%);
+  width : 7vw;
+  height : 7vw;
+  border-radius: 50%;
+  background-color: #11111133;
+  color : var(--primary);
+  font-size : 32px;
+  font-family: 'Indie Flower', cursive;
+  border : none;
+  display : inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#left {
+  left : 0;
+}
+
+#right {
+  right : 0;
 }
 
 p {
@@ -32,14 +61,22 @@ p {
 }
 
 column {
-  width : 80vw;
-  min-width: 80vw;
+  width : 70vw;
+  min-width: 70vw;
   height : calc( 100% - 100px );
-  padding : 20px 10% 0 10%;
+  padding : 20px 15% 0 15%;
   display: flex;
   scroll-snap-align: center;
   flex-flow: column nowrap;
   text-align: center;
+  margin : 0 30%;
+}
+
+column:first-of-type {
+  margin : 0 30% 0 0;
+}
+column:last-of-type {
+  margin:  0 0 0 30%;
 }
 
 horizontal {
@@ -50,12 +87,13 @@ horizontal {
   overflow: auto;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   padding-top : 100px;
 }
 
 column > img {
-  width : 80vw;
-  height : 80vw;
+  width : 70vw;
+  height : 70vw;
   margin : 0 auto;
   margin-bottom : 10px;
 }
