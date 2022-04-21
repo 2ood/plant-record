@@ -51,7 +51,6 @@ right_button.addEventListener("click", ()=>{
 });
 
 function moveActiveColumn(index, next) {
-  console.log(index,next);
   columns[index].classList.remove("active");
   if(next>=0 && next<columns.length) columns[next].classList.add("active");
 }
@@ -79,5 +78,6 @@ function activeColumnIndex() {
 
 function focusedColumnIndex() {
   const x = horizontal.scrollLeft;
-  return (x/390);
+  const viewport_width = window.innerWidth;
+  return (x/viewport_width);
 }
