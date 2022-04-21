@@ -24,7 +24,7 @@ const progress_spot = progressbar.querySelector("spot");
 let timer =null;
 
 horizontal.addEventListener("touchstart",()=>{
-  clearTimeout(timer);
+  if(timer!=null) clearTimeout(timer);
 });
 
 horizontal.addEventListener("touchend",()=>{
