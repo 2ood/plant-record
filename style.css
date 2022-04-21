@@ -24,8 +24,6 @@ titlebar {
   height : 60px;
   text-align: center;
   padding-top : 40px;
-  font-size: 32px;
-  font-weight: bold;
 }
 
 #left, #right {
@@ -69,14 +67,14 @@ column {
   scroll-snap-align: center;
   flex-flow: column nowrap;
   text-align: center;
-  margin : 0 30%;
+  margin : 0 0;
 }
 
 column:first-of-type {
-  margin : 0 30% 0 0;
+  margin : 0 0 0 0;
 }
 column:last-of-type {
-  margin:  0 0 0 30%;
+  margin:  0 0 0 0;
 }
 
 horizontal {
@@ -89,6 +87,37 @@ horizontal {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding-top : 100px;
+}
+
+progressbar {
+  position :relative;
+  top :0;
+  left : 0;
+  right : 0;
+  width : 100px;
+  max-width : 100px;
+  height : 10px;
+  margin : 0 auto;
+  padding : 0 5px;
+  display : inline-block;
+  border-radius : 5px;
+  background-color: var(--primary);
+  overflow-x :visible;
+  transition : all .5s ease-in-out ;
+}
+
+progressbar spot {
+  position: absolute;
+  left : 0;
+  display: inline-block;
+  height : 6px;
+  width : 6px;
+  transform: translate(2px,2px);
+  border-radius : 50%;
+  background-color: var(--secondary);
+  transition : all .3s ease-in-out;
+  margin-left: 0px;
+  z-index : 10;
 }
 
 column > img {
@@ -139,4 +168,9 @@ curtain {
     text-align: center;
     border-radius: 1em;
   }
+}
+
+.vanish {
+  opacity : 0;
+  transition : all 1s ease-in-out ;
 }
