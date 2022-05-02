@@ -20,9 +20,11 @@ const horizontal = document.querySelector("horizontal");
 const columns = horizontal.getElementsByTagName("column");
 const progressbar = document.querySelector("progressbar");
 const progress_spot = progressbar.querySelector("spot");
+const posts = document.querySelectorAll("ul.posts > li");
 
 let timer =null;
 
+//add event listeners of horizontal touch scrolls
 horizontal.addEventListener("touchstart",()=>{
   if(timer!=null) clearTimeout(timer);
 });
@@ -36,6 +38,7 @@ horizontal.addEventListener("touchend",()=>{
     }, 1500);
 });
 
+//add event listeners of horizontal scroll buttons
 left_button.addEventListener("click", ()=>{
     horizontal.scrollLeft-=horizontal.offsetWidth;
 
@@ -49,6 +52,21 @@ right_button.addEventListener("click", ()=>{
   const index = activeColumnIndex();
   if(index+1<columns.length) moveActiveClass(index,index+1);
 });
+
+//add onclick event listeners to post lists
+for(let p of posts) {
+  p.addEventListener("click",(evt)=>{
+    let target =evt.srcElement;
+    while(true) {
+      console.log(`checking`, target);
+      if(target.tagName=="LI" && target.parentNode.classList.contains("posts")) break;
+      else {target = target.parentNode;}
+    }
+    window.location.href=`post.html?id=${target.id}`;
+  });
+}
+
+
 
 function moveActiveColumn(index, next) {
   columns[index].classList.remove("active");
