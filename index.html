@@ -7,118 +7,93 @@
     <meta property="og:description" content="Check out 2ood's home grown plants!" />
     <meta property="og:url"content="https://2ood.github.io/plant-record/" />
     <meta property="og:title" content="2ood's botanical book" />
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>2ood's botanical book - overview</title>
     <link rel="icon" href="img/favicon.svg">
+    <script src="script/script.js" defer></script>
   </head>
   <body>
     <curtain>
-      <p>This page is adjusted to mobile screen.</p>
+      <p>This page is adjusted to desktop screen.<br/>
+      <a href="mobile/index.html">go to mobile page</a>
+    </p>
     </curtain>
-    <titlebar>
-      <h1>2ood's botanical book</h1>
-      <progressbar class="vanish"><spot></spot></progressbar>
-    </titlebar>
-    <horizontal>
-        <button type="button" id="left"><</button>
-        <button type="button" id="right">></button>
-      <column class="active" id="1">
-        <img src="img/apple-tree.jpg" alt="apple-tree">
-        <h1>Apple Tree</h1>
-        <intro>
-          My apple tree.
-        </intro>
-        <ul class="posts">
-          <li  id="5678">
-            <h3>사과나무와 만남</h3>
-            <summary>사과나무와는 이렇게 만났습니다.</summary>
-            <ul class="tags">
-              <li>birth</li>
-            </ul>
-            <state class="upcoming"></state>
-          </li>
+    <main id="main">
+      <nav>
+        <logo>2ood's garden</logo>
+        <searchbar>
+          <input id="plant-search" placeholder="search plant..."></input>
+          <button type="button">search</button>
+        </searchbar>
+        <ul>
+          <label for="flower">flower</label>
+          <ul id="flower">
+            <li>Dandelion</li>
+            <li>Rose</li>
+          </ul>
+          <label for="tree">tree</label>
+          <ul id="tree">
+            <li>Apple</li>
+            <li>Ginko<li/>
+          </ul>
         </ul>
-      </column>
-      <column id="2">
-        <img src="img/bean-stalk.jpg" alt="bean-stalk">
-        <h1>Bean Stalk</h1>
-        <intro>
-          My Bean Stalk.
-        </intro>
-      </column>
-      <column id="3">
-        <img src="img/ginko-tree.jpg" alt="ginko-tree">
-        <h1>Ginko Tree</h1>
-        <intro>
-          My Ginko Tree.
-        </intro>
-        <ul class="posts">
-          <li id="1234">
-            <h3>은행나무와 만남</h3>
-            <summary>은행나무와는 이렇게 만났습니다.</summary>
-            <ul class="tags">
-              <li>birth</li>
+      </nav>
+      <content id="content">
+        <h1>Apple tree</h1>
+        <panel id="profile">
+          <img src="img/apple-tree.jpg">
+        </panel>
+        <panel id="details">
+          <section>
+            <h1>Details</h1>
+            asdf
+            asdfa
+            sdfasdf
+          </section>
+          <section>
+            <h1>Achievements</h1>
+          </section>
+        </panel>
+        <panel id="stats">
+          <h1>Stats</h1>
+
+        </panel>
+        <panel id="gardenings">
+          <h1>Gardening Log</h1>
+          <section>
+            <h2>오늘</h2>
+            <ul>
+              <li>물주기</li>
+              <li>Hey</li>
+              <li>Hey</li>
             </ul>
-            <state class="new"></state>
-          </li>
-        </ul>
-      </column>
-      <column id="4">
-        <img src="img/boxwood-tree.jpg" alt="boxwood-tree">
-        <h1>Boxwood Tree</h1>
-        <intro>
-          My Boxwood Tree
-        </intro>
-      </column>
-      <column id="5">
-        <img src="img/metasequoia-tree.jpg" alt="metasequoia-tree">
-        <h1>Metasequoia Tree</h1>
-        <intro>
-          My Metasequoia Tree
-        </intro>
-      </column>
-      <column id="6">
-        <img src="img/olive-tree.jpg" alt="olive-tree">
-        <h1>Olive Tree</h1>
-        <intro>
-          My Olive Tree
-        </intro>
-      </column>
-      <column id="7">
-        <img src="img/peppermint-plant.jpg" alt="peppermint-plant">
-        <h1>Peppermint Plant</h1>
-        <intro>
-          My Peppermint Plant
-        </intro>
-      </column>
-      <column id="8">
-        <img src="img/taxus-tree.jpg" alt="taxus-tree">
-        <h1>Taxus Tree</h1>
-        <intro>
-          My Taxus Tree
-        </intro>
-      </column>
-      <column id="9">
-        <img src="img/tomato-plant.jpg" alt="tomato-plant">
-        <h1>Tomato Plant</h1>
-        <intro>
-          My Tomato Plant
-        </intro>
-      </column>
-      <column id="10">
-        <img src="img/tomato-plant-1.jpg" alt="tomato-plant-1">
-        <h1>Tomato Plant-1</h1>
-        <intro>
-          My Tomato Plant-1
-        </intro>
-      </column>
-    </horizontal>
-    <footer>
-      <p>last update : April 21st, 2022 19:00</p>
-    </footer>
+          </section>
+            <h2>이번주</h2>
+            <ul>
+              <li>Hey</li>
+            </ul>
+          <section>
+            <h2>이번달</h2>
+            <ul>
+              <li>Hey</li>
+            </ul>
+          </section>
+          <section>
+            <h2>저번 달</h2>
+            <ul>
+              <li>Hey</li>
+            </ul>
+          </section>
+        </panel>
+        <panel id="logs">
+          <h1>Logs</h1>
+        </panel>
+
+
+      </content>
+    </main>
   </body>
-    <script src="script/script.js"></script>
 </html>

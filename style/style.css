@@ -1,0 +1,225 @@
+:root {
+  --primary : #2BAE66;
+  --secondary : #FCF6F5;
+  --indent : 10px;
+  --indent2 : 20px;
+  --indent3 : 30px;
+  --indent4 : 40px;
+  --indent5 : 50px;
+}
+
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: var(--secondary);
+  color : black;
+  /*font-family: 'Indie Flower', cursive;*/
+  font-family : 'Brush Script MT' , cursive;
+  position: relative;
+  min-height : 100vh;
+  height : 100vh;
+}
+
+h1, h2 {
+  color : var(--primary);
+}
+
+curtain {
+  display : none;
+}
+
+main {
+  position : absolute;
+  top : 0;
+  bottom : 0;
+  left : 0;
+  right : 0;
+  display : inline-grid;
+  grid-template: 1fr / 1fr 5fr ;
+}
+
+nav {
+  background-color : var(--primary);
+  color : var(--secondary);
+  top :0;
+  bottom : 0;
+  padding : 60px 30px 0 30px;
+  display : inline-flex;
+  flex-direction : column;
+  gap : var(--indent2);
+}
+
+nav logo {
+  font-size : 30px;
+  text-align : center;
+}
+
+nav label {
+  font-size : 30px;
+}
+
+nav ul {
+  font-size : 20px;
+  padding-left: var(--indent2);
+}
+
+searchbar {
+  display : inline-flex;
+  right : 0;
+  left : 0;
+}
+
+searchbar input {
+  background-color : transparent;
+  border: none;
+  height : 2em;
+  border-bottom : 3px var(--secondary) solid;
+  padding-left : var(--indent);
+  outline : none;
+  color : var(--secondary);
+  font-weight: bold;
+}
+
+searchbar input::placeholder {
+  color: grayscale;
+  font-weight: bold;
+}
+
+
+searchbar button {
+  background-color: var(--secondary);
+  color : var(--primary);
+  border : none;
+  margin-left : var(--indent);
+  padding : 0 var(--indent);
+}
+
+content {
+  background-color : var(--secondary);
+  top : 0;
+  bottom : 0;
+  padding : var(--indent3);
+  display : inline-grid;
+  position : relative;
+  min-height : 150vh;
+  gap : var(--indent3);
+  grid-template : repeat(3, 1fr) / repeat(4, 1fr);
+  padding-top : 100px;
+}
+
+content > h1:first-of-type {
+  display : block;
+  position : absolute;
+  top : var(--indent3);
+  left : var(--indent5);
+  font-size : 50px;
+}
+
+content  h1 {
+  font-size : 35px;
+}
+
+panel {
+  background-color : transparent;
+  border-radius : 5px;
+  display : inline-flex;
+  flex-direction: column;
+  padding : var(--indent);
+}
+
+panel#profile {
+  grid-row: 1;
+  grid-column : 1;
+
+  justify-content : center;
+  align-items : center;
+}
+
+panel#details{
+  grid-row: 1;
+  grid-column : 2 / 4;
+  display : inline-grid;
+  grid-template : 1fr 1fr / 1fr;
+}
+
+panel#stats{
+  grid-row: 1;
+  grid-column : 4;
+}
+
+panel#gardenings{
+  grid-row: 2 / 4;
+  grid-column : 2 / -1;
+}
+
+panel#logs{
+  grid-row: 2 / 4;
+  grid-column : 1;
+  display : inline-grid;
+
+}
+
+panel#profile img {
+  width : 100%;
+  height : 100%;
+  border-radius : var(--indent3);
+}
+
+panel#gardenings section {
+  margin-bottom : var(--indent3);
+}
+
+panel#gardenings li:first-of-type::before {
+  content : '';
+  position : absolute;
+  top : 0;
+  bottom : 0;
+  left : var(--indent);
+  width : 2px;
+  background-color : #00000055;
+}
+
+panel#gardenings ul {
+  list-style : none;
+  position : relative;
+}
+
+panel#gardenings li {
+  width : 100%;
+  height : var(--indent3);
+  margin-bottom : var(--indent3);
+  margin-left : var(--indent3);
+}
+
+@media (max-width : 540px){
+  curtain {
+    display : flex;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 100;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  curtain > p {
+    width : 80vw;
+    height : 80vw;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    padding : var(--indent);
+    font-size : 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1em;
+  }
+}
