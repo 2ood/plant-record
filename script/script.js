@@ -29,7 +29,7 @@ window.addEventListener("load",async ()=>{
 });
 
 async function loadPlantJson(plantName) {
-  const api_url = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/plant-profile/${plantName}`;
+  const api_url = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/profile/${plantName}`;
 
   const res = await fetch(api_url);
   const json = await res.json();
