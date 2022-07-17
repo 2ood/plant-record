@@ -1,0 +1,63 @@
+<svg width="164" height="140" viewBox="0 0 164 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="date-of-week">
+<rect class="sun" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="6" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="red">S</text>
+<rect class="mon" x="24" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="30" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="white">M</text>
+<rect class="tue" x="48" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="55" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="white">T</text>
+<rect class="wed" x="72" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="77" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="white">W</text>
+<rect class="thu" x="96" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="103" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="white">T</text>
+<rect class="fri" x="120" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="127" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="white">F</text>
+<rect class="sat" x="144" width="20" height="20" rx="1" fill="#7C7C7C"/>
+<text x="150" y="14" font-family="Verdana" font-size="10"  width="20" height="20" fill="skyblue">S</text>
+</g>
+<g id="week-1">
+<rect class="sun" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="mon" x="24" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="tue" x="48" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="wed" x="72" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="thu" x="96" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="fri" x="120" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="sat" x="144" y="24" width="20" height="20" rx="1" fill="#D9D9D9"/>
+</g>
+<g id="week-2">
+<rect class="sun" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="mon" x="24" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="tue" x="48" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="wed" x="72" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="thu" x="96" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="fri" x="120" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="sat" x="144" y="48" width="20" height="20" rx="1" fill="#D9D9D9"/>
+</g>
+<g id="week-3">
+<rect class="sun" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="mon" x="24" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="tue" x="48" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="wed" x="72" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="thu" x="96" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="fri" x="120" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="sat" x="144" y="72" width="20" height="20" rx="1" fill="#D9D9D9"/>
+</g>
+<g id="week-4">
+<rect class="sun" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="mon" x="24" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="tue" x="48" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="wed" x="72" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="thu" x="96" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="fri" x="120" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="sat" x="144" y="96" width="20" height="20" rx="1" fill="#D9D9D9"/>
+</g>
+<g id="week-5">
+<rect class="sun" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="mon" x="24" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="tue" x="48" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="wed" x="72" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="thu" x="96" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="fri" x="120" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+<rect class="sat" x="144" y="120" width="20" height="20" rx="1" fill="#D9D9D9"/>
+</g>
+</svg>

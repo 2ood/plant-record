@@ -6,7 +6,7 @@ window.addEventListener("load",()=>{
     console.log(`loading ${plant_name}`);
     loadPlant(plant_name);
   }
-  console.log("hey!");
+
   const sidebar_li  = document.querySelectorAll("nav li");
   sidebar_li.forEach((li)=>{
     li.addEventListener("click",(evt)=>{
@@ -16,6 +16,14 @@ window.addEventListener("load",()=>{
       loadPlant(plant_name);
     });
   });
+
+  const object = document.getElementById("calendar");
+  const svg = object.contentDocument.querySelector("svg:first-of-type");
+  console.log(svg);
+
+  //svg.querySelector("#week-4 .fri").style.fill="coral";
+
+
 });
 
 function loadPlant(plantName) {

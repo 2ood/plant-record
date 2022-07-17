@@ -23,7 +23,7 @@
     </curtain>
     <main id="main">
       <nav>
-        <logo>2ood's garden</logo>
+        <a id="logo" href="index.html"><logo>2ood's garden</logo></a>
         <searchbar>
           <input id="plant-search" placeholder="search plant..."></input>
           <button type="button">search</button>
@@ -42,24 +42,34 @@
         </ul>
       </nav>
       <content id="content">
-        <h1>Apple tree</h1>
+        <h1 id="title">Apple tree</h1>
         <panel id="profile">
           <img src="img/apple-tree.jpg">
         </panel>
         <panel id="details">
           <section>
             <h1>Details</h1>
-            asdf
-            asdfa
-            sdfasdf
+            <p>
+              출생 : 2022.2.1 <br/>
+              종 : 사과나무
+            </p>
           </section>
           <section>
             <h1>Achievements</h1>
+            <chipgroup>
+              <chip class="germination"></chip>
+              <chip class="sprout"></chip>
+            </chipgroup>
           </section>
         </panel>
         <panel id="stats">
           <h1>Stats</h1>
-
+          <object id="calendar" data="img/calendar.svg" type="image/svg+xml"></object>
+          <chipgroup>
+            <chip class="sun"></chip>
+            <chip class="water"></chip>
+            <chip class="temp"></chip>
+          </chipgroup>
         </panel>
         <panel id="gardenings">
           <h1>Gardening Log</h1>

@@ -1,0 +1,23 @@
+{
+  "name": "plant-record",
+  "version": "1.0.0",
+  "description": "this repo is dedicated to my plants.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2ood/plant-record.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2ood/plant-record/issues"
+  },
+  "homepage": "https://github.com/2ood/plant-record#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
