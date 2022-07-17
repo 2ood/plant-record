@@ -1,6 +1,7 @@
 {
-  "name" : "Apple Tree",
-  "details" : "I am an apple tree.\n",
+  "title" : "Apple Tree",
+  "img_src": "img/apple-tree.jpg",
+  "details" : "I am an apple tree.\nborn in 2022.2.1",
   "achievements" : ["germ","sprout"],
-  "logs" : ""
+  "logs" : "sample logs"
 }

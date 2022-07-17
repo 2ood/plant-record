@@ -44,36 +44,29 @@
       <content id="content">
         <h1 id="title">Apple tree</h1>
         <panel id="profile">
-          <img src="img/apple-tree.jpg">
+          <img id="profile-img" src="img/apple-tree.jpg" alt="profile image">
         </panel>
         <panel id="details">
           <section>
             <h1>Details</h1>
-            <p>
-              출생 : 2022.2.1 <br/>
-              종 : 사과나무
-            </p>
+            <pre id="details-pre">
+            </pre>
           </section>
           <section>
             <h1>Achievements</h1>
-            <chipgroup>
-              <chip class="germination"></chip>
-              <chip class="sprout"></chip>
+            <chipgroup id="chipgroup-achievements">
             </chipgroup>
           </section>
         </panel>
         <panel id="stats">
           <h1>Stats</h1>
           <object id="calendar" data="img/calendar.svg" type="image/svg+xml"></object>
-          <chipgroup>
-            <chip class="sun"></chip>
-            <chip class="water"></chip>
-            <chip class="temp"></chip>
+          <chipgroup id="chipgroup-stats">
           </chipgroup>
         </panel>
         <panel id="gardenings">
           <h1>Gardening Log</h1>
-          <section>
+          <section id="gardenings-today">
             <h2>오늘</h2>
             <ul>
               <li>물주기</li>
@@ -81,17 +74,19 @@
               <li>Hey</li>
             </ul>
           </section>
+          <section id="gardenings-this-week">
             <h2>이번주</h2>
             <ul>
               <li>Hey</li>
             </ul>
-          <section>
+          </section>
+          <section id="gardenings-this-month">
             <h2>이번달</h2>
             <ul>
               <li>Hey</li>
             </ul>
           </section>
-          <section>
+          <section id="gardenings-last-month">
             <h2>저번 달</h2>
             <ul>
               <li>Hey</li>
@@ -100,8 +95,9 @@
         </panel>
         <panel id="logs">
           <h1>Logs</h1>
+          <pre "logs-pre">
+          </pre>
         </panel>
-
 
       </content>
     </main>
