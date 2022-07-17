@@ -15,10 +15,11 @@ app.use('/style',express.static(__dirname+"/style"));
 app.use('/profile',plantRouter);
 
 
-app.get('/',(req,res)=>{
-  res.sendFile("./index.html");
+app.listen(process.env.PORT || 8080, function(){
+  console.log(`listening on ${process.env.PORT} or 8080`);
 });
 
-app.listen(8080,()=>{
-  console.log("listening at port 8080");
+app.get('/',function(req,res){
+  res.header("Access-Control-Allow-Origin", "*");
+  res.sendFile(__dirname + '/index.html');
 });
