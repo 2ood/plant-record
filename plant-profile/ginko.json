@@ -1,6 +1,7 @@
 {
   "title" : "Ginko Tree",
   "img_src": "img/ginko-tree.jpg",
+  "status":"alive",
   "details" : "I am an Ginko tree.\nborn in 2021.11.20",
   "achievements" : ["germ","sprout"],
   "logs" : "sample logs"

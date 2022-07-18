@@ -1,0 +1,8 @@
+{
+  "title" : "Olive Tree",
+  "img_src": "img/olive-tree.jpg",
+  "status":"dead",
+  "details" : "Olive Tree.\nDead under dehydration.",
+  "achievements" : [],
+  "logs" : "sample logs"
+}

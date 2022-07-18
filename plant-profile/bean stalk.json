@@ -1,0 +1,8 @@
+{
+  "title" : "Bean Stalk",
+  "img_src": "img/bean-stalk.jpg",
+  "status":"dead",
+  "details" : "Bean Stalk.\nDead under dehydration.",
+  "achievements" : ["germ","sprout"],
+  "logs" : "sample logs"
+}
