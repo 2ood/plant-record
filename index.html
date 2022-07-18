@@ -16,41 +16,47 @@
     <script src="script/script.js" defer></script>
   </head>
   <body>
-    <curtain>
-      <p>This page is adjusted to desktop screen.<br/>
-      <a href="mobile/index.html">go to mobile page</a>
-    </p>
-    </curtain>
     <main id="main">
-      <nav>
+      <span class="control-nav" id="open-nav"></span>
+      <nav id="nav">
+        <span class="control-nav" id="close-nav"></span>
         <a id="logo" href="index.html"><logo>2ood's garden</logo></a>
+        <!--
         <searchbar>
           <input id="plant-search" placeholder="search plant..."></input>
           <button type="button">search</button>
         </searchbar>
-        <ul>
-          <label for="flower">flower</label>
-          <ul id="flower">
-            <li>Dandelion</li>
-            <li>Rose</li>
-          </ul>
-          <label for="tree">tree</label>
-          <ul id="tree">
-            <li>Apple</li>
-            <li>Ginko<li/>
-          </ul>
+      -->
+      <hr/>
+        <label for="tree-ul">Trees</label>
+        <ul id="tree-ul">
+          <li>Apple</li>
+          <li>Ginko</li>
+        </ul>
+        <label for="seed-ul">Seeds</label>
+        <ul id="seed-ul">
+          <li>Lemon</li>
+          <li>Peach</li>
+        </ul>
+        <hr/>
+        <label for="dead-ul">Memorial..</label>
+        <ul id="dead-ul">
+          <li>Bean Stalk</li>
+          <li>peppermint</li>
+          <li>Olive</li>
         </ul>
       </nav>
       <content id="content">
-        <h1 id="title">Apple tree</h1>
+        <h1 id="title">Choose a plant in sidebar</h1>
         <panel id="profile">
-          <img id="profile-img" src="img/apple-tree.jpg" alt="profile image">
+          <img id="profile-img" src="img/image-to-be-updated.png" onerror="onImgError(this)" alt="profile image">
         </panel>
         <panel id="details">
           <section>
             <h1>Details</h1>
             <pre id="details-pre">
             </pre>
+
           </section>
           <section>
             <h1>Achievements</h1>
@@ -60,6 +66,7 @@
         </panel>
         <panel id="stats">
           <h1>Stats</h1>
+          <status id="status"></status>
           <object id="calendar" data="img/calendar.svg" type="image/svg+xml"></object>
           <chipgroup id="chipgroup-stats">
           </chipgroup>
